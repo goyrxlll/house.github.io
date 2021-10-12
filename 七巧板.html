@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id='canvas' width="500px" height="300px"></canvas>
+</body>
+<script>
+     var canvas = document.getElementById('canvas');
+     var ctx = canvas.getContext('2d');
+
+     ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(250, 300);
+    ctx.lineTo(0, 300);
+    ctx.fillStyle = 'yellow'
+    ctx.fill();
+    
+
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(250, 300);
+    ctx.lineTo(500, 0);
+    ctx.fillStyle = 'green'
+    ctx.fill();
+    
+
+    ctx.beginPath();
+    ctx.moveTo(500, 0);
+    ctx.lineTo(375, 150);
+    ctx.lineTo(500, 300);
+    ctx.fillStyle = 'blue'
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(375, 150);
+    ctx.lineTo(250, 300);
+    ctx.lineTo(500, 300);
+    ctx.fillStyle = 'red'
+    ctx.fill();
+
+
+
+
+</script>
+</html>
